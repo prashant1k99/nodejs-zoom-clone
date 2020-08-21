@@ -1,0 +1,17 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo Enetering build
+      - npm install
+      - pip install --upgrade awscli
+  build:
+    commands:
+      - echo Starting Build
+      - mkdir dist && cp server.js dist
+      - echo Build Complete
+
+artifacts:
+  files:
+    - dist/**/*
+    - node_modules/**/*
