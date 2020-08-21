@@ -11,7 +11,12 @@ phases:
       - mkdir dist
       - mkdir demo
       - echo Build Complete
-# artifacts:
-#   files:
-#     - dist/**/*
-#     - node_modules/**/*
+artifacts:
+  files:
+    - dist/**/*
+    - node_modules/**/*
+    - public/**/*
+    - views/**/*
+    - package.json
+    - Procfile
+    - server.js
