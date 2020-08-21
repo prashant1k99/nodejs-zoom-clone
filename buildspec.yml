@@ -10,7 +10,6 @@ phases:
       - echo Starting Build
       - mkdir dist && cp server.js dist
       - echo Build Complete
-
 artifacts:
   files:
     - dist/**/*
