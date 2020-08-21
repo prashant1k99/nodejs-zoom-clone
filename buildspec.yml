@@ -8,7 +8,8 @@ phases:
   build:
     commands:
       - echo Starting Build
-      - mkdir dist && cp server.js dist
+      - mkdir dist
+      - mkdir demo
       - echo Build Complete
 artifacts:
   files:
